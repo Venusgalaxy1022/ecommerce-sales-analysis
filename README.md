@@ -38,6 +38,7 @@ This project aims to track the monthly revenue and other relevant key performanc
 
 ### Bigquery를 활용하여 데이터 가공
 ![BigQuery](https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/bigquery_sql.png?raw=true)
+- https://console.cloud.google.com/bigquery?invt=AbuIKQ&project=zerobase-olist-475502&supportedpurview=project&ws=!1m5!1m4!4m3!1szerobase-olist-475502!2solist!3solist_order_items
 
 
 ## 분석 결과
