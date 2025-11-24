@@ -3,7 +3,7 @@ This project aims to track the monthly revenue and other relevant key performanc
 
 ## 배경
 <p align="center">
-  <img src="https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/olist_logo.png?raw=true" width="350">
+  <img src="https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/olist_logo.png?raw=true" width="350" height="100">
 </p>
 
 본 프로젝트는 Brazilian E-Commerce 플랫폼 Olist의 온라인 쇼핑몰의 월별 매출 추이와 이를 구성하는 핵심 하위 지표를 분석하는 것을 목표로 한다. 이커머스 사업의 건전성을 판단하는 가장 기본적인 지표는 매출(Revenue)이나 단순 매출액만으로는 충분한 인사이트를 얻기 어렵기 때문에, 매출을 다시 세부 구성 요소로 분해해 보다 입체적으로 분석해보고자 한다. 본 프로젝트에서는 2017년 기준 Olist 데이터를 활용해 매출 및 하위 지표를 종합 분석하고,
@@ -37,28 +37,27 @@ This project aims to track the monthly revenue and other relevant key performanc
 ## 분석 쿼리
 
 ### Bigquery를 활용하여 데이터 가공
-<p align="center">
-  <img src="https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/bigquery.png?raw=true" width="350">
-</p>
+![BigQuery](https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/bigquery_sql.png?raw=true)
 
 
 ## 분석 결과
 
 1. 2017년 월별 매출 분석
 
-2017년 한 해 동안의 매출의 추이는 아래와 같고, 한 해동안 지속적으로 매출액이 향상되는 성장세를 보이고 있다. 특히 3월, 5월, 11월에 상대적으로 큰 매출액을 달성하고 있고, 이에 따라 익월 기준 전월 대비 매출액이 감소하는 패턴을 보인다. 그러나, 해당 월의 매출액이 과도하게 이상하게 추산된 것은 아니고 모종의 합리적인 이유로 매출이 증가한 것임을 알 수 있다. 왜냐하면, 관련된 월의 경우 모두 이상치 판단 기준 범위 내에 있기 때문이다 (±2.5 표준편차 적용). 더불어, 상세 분석 결과 해당 기간 매출 증대는 가장 직접적으로 이용 고객수 증가에 따른 주문 수 증가로 확인된다. 서비스의 성숙도가 높아지면서 고객 유치 및 활성 고객 증대에 효과가 나타난 것으로 보인다. 
+2017년 한 해 동안의 매출의 추이는 아래와 같고, 한 해동안 지속적으로 매출액이 향상되는 성장세를 보이고 있다. 특히 3월, 5월, 11월에 상대적으로 큰 매출액을 달성하고 있고, 이에 따라 익월 기준 전월 대비 매출액이 감소하는 패턴을 보인다. 
 
-<p align="center">
-  <img src="https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/월별매출추이.png?raw=true" width="350">
-</p>
+그러나, 해당 월의 매출액이 과도하게 이상하게 추산된 것은 아니고 모종의 합리적인 이유로 매출이 증가한 것임을 알 수 있다. 왜냐하면, 관련된 월의 경우 모두 이상치 판단 기준 범위 내에 있기 때문이다 (±2.5 표준편차 적용). 
+
+더불어, 상세 분석 결과 해당 기간 매출 증대는 가장 직접적으로 이용 고객수 증가에 따른 주문 수 증가로 확인된다. 서비스의 성숙도가 높아지면서 고객 유치 및 활성 고객 증대에 효과가 나타난 것으로 보인다. 
+
+![월별매출추이](https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/월별매출추이.png?raw=true)
+
 
 2. 상세 지표 분석
 
 아래는 같은 해 매출액, 주문수, 주문상품수의 월별 추이를 보여주는 대시보드이다. 세가지 지표 모두 동일한 패턴을 보인다. 연말로 갈 수록 상승하는 패턴을 보여준다. 
 
-<p align="center">
-  <img src="https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/세부지표추이.png?raw=true" width="350">
-</p>
+![세부지표추이](https://github.com/Venusgalaxy1022/Ecommerce-sales-analysis/blob/main/imgs/세부지표추이.png?raw=true)
 
 ## 결론
 
